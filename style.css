@@ -185,6 +185,7 @@ a {
     margin: 5px 0;
     font: 14px arial;
     text-decoration: none;
+    display:inline;
 }
 
 .footer {
