@@ -13,7 +13,32 @@ body {
 }
 
 .main-content{
-    position: relative;
+    /* position: relative; */
+    background: url('images/Content.png');
+    padding: 160px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.main-content-box{
+    padding: 0 50px 0 10px;
+}
+
+.btn-primary{
+    background-color: #014B40;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 30px 0 0;
+}
+
+.btn-primary:hover{
+    background-color: #093d35;
+}
+
+.main-content-box a:hover .fa-arrow-right{
+    transform: translateX(10px);
 }
 
 .navbar {
