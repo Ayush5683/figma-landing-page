@@ -1,50 +1,44 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.toparea{
+.toparea {
     padding: 15px 0;
-    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     position: absolute;
     top: 0;
     z-index: 19;
     width: 100%;
 }
 
-.navbar{
+.main-content{
+    position: relative;
+}
+
+.navbar {
     margin: 0 !important;
     list-style: none;
 }
 
-.navbar li a:link, .navbar li a:visited{
+.navbar li a:link,
+.navbar li a:visited {
     color: #014B40 !important;
     font: bold 15px helvetica, arial, serif;
     text-decoration: none;
 }
 
-.nav-link{
+.nav-link {
     margin: 0 5px;
 }
-.circle{
-    width: 54px;
-    height: 54px;
-    background-color: black;
-    /* position: absolute; */
-    /* top: 90px; */
-    border-radius: 50%;
-    border: 2px solid white;
-    
-}
 
-
-.featured-section{
+.featured-section {
     padding: 120px 0px;
     color: #014B40;
     font: bold 25px arial;
 }
 
-.box{
+.box {
     width: 100%;
     margin: 50px 0;
     background-color: white;
@@ -53,10 +47,10 @@ body{
     position: relative;
 }
 
-.details{
+.details {
     width: 100%;
     padding: 10px;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
     position: absolute;
     bottom: -80px;
     font: 15px arial;
@@ -64,24 +58,23 @@ body{
     color: #fff;
 }
 
-.text{
+.text {
     height: 50px;
     width: 180px;
     float: left;
 }
 
-.button{
+.button {
     height: 50px;
     width: 60px;
     float: right;
     padding: 15px 0px;
-    
+
 }
 
-.button a{
+.button a {
     color: white;
     background-color: transparent;
-    /* background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.6)); */
     padding: 5px 15px;
     text-decoration: none;
     border: solid 1px white;
@@ -89,45 +82,45 @@ body{
     transition: all 0.8s;
 }
 
-.button:hover a{
-    /* background-color: white; */
+.button:hover a {
     color: #000;
     border: solid 1px black;
 }
 
-.box:hover .details{
+.box:hover .details {
     bottom: 0px;
 }
 
-.menu-search{
+.menu-search {
     padding: 85px 0px;
     background-image: url('images/search-bg.png');
     background-size: cover;
     background-position: center;
 }
 
-.fa-bars{
+.fa-bars {
     color: white;
     margin: 0px 10px;
     font-size: 35px;
     transition: all 0.3s;
 }
-.fa-bars:hover{
+
+.fa-bars:hover {
     color: #198754;
 }
 
-.btn-outline-success{
+.btn-outline-success {
     background-color: white;
 }
 
 
-.color-arrivals{
+.color-arrivals {
     padding: 120px 0px;
     color: #014B40;
     font: bold 25px arial;
 }
 
-.box-square{
+.box-square {
     width: 100%;
     margin: 50px 0 150px 0;
     background-color: white;
@@ -138,68 +131,96 @@ body{
     transition: all 0.3s;
 }
 
-.box-square:hover{
+.box-square:hover {
     opacity: 1;
 }
 
-.footer{
+.image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.details-two {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    border-radius: 20px;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.details-two p,
+a {
+    color: #cecece;
+    margin: 5px 0;
+    font: 14px arial;
+    text-decoration: none;
+}
+
+.footer {
     padding: 100px 0px;
     background-color: #014B40;
     color: #fff;
 }
 
-.footer h3{
-    font:bold 20px arial;
+.footer h3 {
+    font: bold 20px arial;
     margin: 0 0 20px 0;
 }
-.footer p{
+
+.footer p {
     margin: 20px 0;
-    font:12px arial;
+    font: 12px arial;
     color: #c7dbda;
 }
 
-.one{
+.one {
     width: 100%;
     height: 40px;
     margin: 20px 0;
 }
 
-.icon{
+.icon {
     width: 40px;
     height: 100%;
-    /* background-color: blanchedalmond; */
     text-align: center;
     float: left;
 }
 
-.icon i{
+.icon i {
     font-size: 30px;
 }
 
-.text-in{
+.text-in {
     width: 150px;
     float: left;
     margin-left: 10px;
 }
 
-.text-in p{
+.text-in p {
     margin: 0;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     margin: 20px 0;
-    font:12px arial;
+    font: 12px arial;
     color: #c7dbda;
     transition: all 0.3s;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #fff;
 }
 
-.box-content input{
+.box-content input {
     width: 100%;
-    background-color:#1a5d53;
+    background-color: #1a5d53;
     border: none;
     outline: none !important;
     color: white;
@@ -209,7 +230,7 @@ body{
 }
 
 
-.last-area{
+.last-area {
     padding: 20px 0;
     margin: 50px 0 0 0;
     background-color: #1a5d53;
@@ -217,8 +238,8 @@ body{
     text-align: center;
 }
 
-.last-area .fa{
+.last-area .fa {
     margin: 0 10px;
     color: #fff;
-    font-size:20px ;
+    font-size: 20px;
 }
