@@ -10,14 +10,13 @@ body {
     background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     position: absolute;
     top: 0;
-    z-index: 19;
+    z-index: 5;
     width: 100%;
     backdrop-filter: blur(3px);
     font-family: "Poppins";
 }
 
 .main-content {
-    /* position: relative; */
     background: url('images/Content.png');
     padding: 160px 0;
     background-position: center;
@@ -68,14 +67,9 @@ body {
     list-style: none;
     display: none;
     position: absolute;
-    background-color: #A5BF9B;
+    background-color: #fff;
     border-radius: 10px;
 }
-
-.nav-item:hover .nested-nav{
-    display: block;
-}
-
 
 .featured-section {
     padding: 120px 0px;
@@ -284,4 +278,29 @@ a {
     margin: 0 10px;
     color: #fff;
     font-size: 20px;
+}
+
+@media screen and (max-width:922px) {
+    .main-content{
+        background-position: left;
+        background-size: cover;
+    }
+    .main-content h2{
+        font-size: 30px !important;
+    }
+    .details-two{
+        padding: 20px 0;
+    }
+    .details-two h2{
+        font-size: 30px !important;
+    }
+    .last-icons{
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .details-two .same-region{
+        margin-bottom: 15px !important;
+    }
 }

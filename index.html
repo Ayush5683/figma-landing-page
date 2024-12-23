@@ -29,8 +29,8 @@
                                         <a class="nav-link active" aria-current="page" href="#">Shop</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Products <img src="images/Vector 2.png" alt=""></a>
-                                        <!-- <ul class="nested-nav">
+                                        <a  onclick="navShow()" class="nav-link" href="#">Products <img src="images/Vector 2.png" alt=""></a>
+                                        <ul class="nested-nav" id="nestedNav">
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="#">Product 1</a>
                                             </li>
@@ -40,7 +40,7 @@
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="#">Product 3</a>
                                             </li>
-                                        </ul> -->
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Fertilizer</a>
@@ -58,7 +58,7 @@
 
 
                 <div class="col-md-4 col-12" style="text-align: center;">
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <img src="images/logo.png" alt="">
                 </div>
                 <div class="col-md-4 col-12">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -252,7 +252,7 @@
                     </div>
                     <div class="details-two">
                         <h2 style="font: bold 45px arial;">Free Shipping Services</h2>
-                        <p style="margin-bottom: 50px;">*only for the same region</p>
+                        <p style="margin-bottom: 50px;" class="same-region">*only for the same region</p>
                         <a href="tel:+012(345) 78 93">
                             <p><i class="fa fa-phone"></i> +012(345) 78 93</p>
                         </a>
@@ -352,12 +352,8 @@
                 <div class="col-md-6 col-12">
                     ©2022 Planty. All Rights Reserved
                 </div>
-                <div class="col-md-6 col-12">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                <div class="col-md-6 col-12 last-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -369,6 +365,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script>
+            function navShow(){
+                if(document.getElementById("nestedNav").style.display==="none"){
+                    document.getElementById("nestedNav").style.display="block";
+                }
+                else{
+                    document.getElementById("nestedNav").style.display="none";
+                }
+            }
+        </script>
 </body>
 
 </html>
